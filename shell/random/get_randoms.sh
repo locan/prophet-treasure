@@ -10,7 +10,11 @@
 #            - $3:scale
 #########################################################################
 
+# 如果想直接随机抽文件的行
+sort --random-sort file_name | head -n raw_size > result_file
+sort -R file_name|head -n raw_size >result_file
 
+# method 1
 function rand(){
     min=$1
     max=$(($2-$min+1))
@@ -19,7 +23,7 @@ function rand(){
     echo $(($num%$max+$min))
 }
 
-
+# method 2
 function rand2(){  
     min=$1  
     max=$(($2-$min+1))  
@@ -27,7 +31,7 @@ function rand2(){
     echo $(($num%$max+$min))  
 }  
 
-
+# method 3
 function rand3(){
     min=$1
     max=$(($2-$min+1))
@@ -35,6 +39,7 @@ function rand3(){
     echo $(($num%$max+$min))
 }
 
+# for test
 for((i=0;i<$3;i++));
 do
     rnd=$(rand $1 $2)

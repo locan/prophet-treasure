@@ -15,3 +15,10 @@ tags: shell
 不断的使用shell解决问题，让我对shell有了新的认识，仿佛遇见了新大陆，相见恨晚啊~
 
 - 希望自己可以养成好的习惯，在这里将每天遇到的问题，和解决的方案记录下来。
+
+## 在文件中随机抽取n行
+
+```bash
+sort -R file_name|head -n raw_size >result_file
+```
+
