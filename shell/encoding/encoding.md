@@ -9,7 +9,7 @@ author: luanpeng
 # 使用shell命令行编辑文件的编码
 
 ```bash
-iconv -f utf8 -t 18030 file>result_file
+iconv -f utf8 -t gb18030 file>result_file
 ```
 
 
