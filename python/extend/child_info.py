@@ -18,3 +18,11 @@ class ChildInfo(BaseInfo):
         print 'child info'
 
 
+def main():
+    ci = ChildInfo()
+    ci.process()
+
+
+if __name__ == '__main__':
+    main()
+

@@ -11,11 +11,13 @@
 
 class BaseInfo(object):
 
-    def __init__(self, conf):
+
+    def __init__(self):
         print 'base_info'
 
     def process(self):
         print 'base process'
+        self.process_data()
 
     def process_data(self):
         print 'base process data'
